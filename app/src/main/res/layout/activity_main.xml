@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ejemplo" />
+    <EditText
+        android:id="@+id/cantidad"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></EditText>
+    <Button
+        android:id="@+id/convertir"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/btnConvertir"></Button>
+    <CheckBox
+        android:id="@+id/tipo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ingresado como Metrico"></CheckBox>
+    <RadioGroup
+        android:id="@+id/equipoFavorito"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <RadioButton
+            android:id="@+id/equBarsa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Barcelona"></RadioButton>
+        <RadioButton
+            android:id="@+id/equReal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Real Madrid"></RadioButton>
+        <RadioButton
+            android:id="@+id/equAleti"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Atletico M"></RadioButton>
+    </RadioGroup>
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Opcion Fuera de grupo"></RadioButton>
+    <RadioGroup
+        android:id="@+id/comidaFavorita"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RadioButton
+            android:id="@+id/comMila"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Milansea"></RadioButton>
+        <RadioButton
+            android:id="@+id/comEmp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Empanadas"></RadioButton>
+        <RadioButton
+            android:id="@+id/comRav"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ravioles"></RadioButton>
+    </RadioGroup>
+</LinearLayout>
